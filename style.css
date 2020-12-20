@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* 스크롤막기 */
+.hidden
+ {
+     height:100%; 
+     min-height:100%; 
+     overflow:hidden !important;
+    touch-action:none;
+}
+
 /* 선택지 */
 .sonteckge{
     
@@ -170,7 +180,7 @@ nav {
     /* color: rgb(61, 61, 61); */
     color: rgb(85, 217, 193);
 }
-
+/* 인트로 */
 .intro {
 
     /* background: black; */
@@ -183,6 +193,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 
 }
 /* 슬라이더 */
@@ -198,6 +209,7 @@ nav {
     width: 100%;
     height: 100%;
     transform: translateY(100%);
+    z-index: 3;
 }
 
 .intro-text {
