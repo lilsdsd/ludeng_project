@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  */
+.sonteckge{
+    
+    min-height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: consolas; */
+}
+.container 
+{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+/*  */
+main {
+    font-family: "Heebo", sans-serif;
+}
+
+.landing{ 
+    min-height: 100vh;
+    background: url("./hero.jpg");
+    /* background: rgb(37, 38, 38); */
+    background-size: cover;
+    padding: 0rem 5rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    color:rgb( 53, 140, 124);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding-left: 10rem;
+    font-size: 1.2rem;
+}
+
+#logo {
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: rgb( 242, 242, 242);;
+}
+
+.big-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    font-family: "Lobster", cursive;
+    /* color: rgb(61, 61, 61); */
+    color: rgb(85, 217, 193);
+}
+
+.intro {
+
+    /* background: black; */
+    background: rgb(37, 38, 38);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.slider{
+
+    /* background: rgb(242, 242, 242); */
+    background: rgb(85, 217, 193);
+
+    /* background: url("./hero.jpg"); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.intro-text {
+    color: white;
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+}
+
+.hide{
+    /* background: black; */
+    background: rgb(37, 38, 38);
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
