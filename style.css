@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*  */
+/* 선택지 */
 .sonteckge{
     
     min-height: 100vh;
@@ -123,7 +123,7 @@
 
 
 
-/*  */
+/* 메인  */
 main {
     font-family: "Heebo", sans-serif;
 }
@@ -185,12 +185,13 @@ nav {
     align-items: center;
 
 }
+/* 슬라이더 */
 .slider{
 
     /* background: rgb(242, 242, 242); */
     background: rgb(85, 217, 193);
 
-    /* background: url("./hero.jpg"); */
+    /* background: url("./image/PRISM_LOGO.png"); */
     position: fixed;
     top: 0;
     left: 0;
