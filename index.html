@@ -3,10 +3,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <script src="mimi.js"></script>
+    <!-- <script src = "sketch.js"></script> -->
+    <!-- <script src = "box.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
         rel="stylesheet" />
+    <!-- <script scr = "matter.js"></script>  -->
     <title>루뎅 포트폴리오</title>
 </head>
 
@@ -42,6 +46,7 @@
 
     <main data-barba="container" data-barba-namespace="home-section">
         <div class="header">
+
             <div class="title animate-this">
                 <section class="landing">
                     <nav>
@@ -72,24 +77,32 @@
                     </div>
                     <div class="start-box">
 
-                        <button id = "skip"class="button" onclick="start_box_fall">SKIP</button>
-
+                        <button id="mimi_btn1" type="button">SKIP</button>
 
                     </div>
-
-
             </div>
-
-            </section>
-        </div>
         </div>
 
+        <div class = "middle_scroll"> 
+
+            <div class = "blue_sea">
+            <div class = "middle_message"></div>
+            <img src = "./image/DII.jpg"  alt="" height="50%" width="60%" style="display:block; margin: auto; " />
+
+             </div>
+        </div>
+
+        </section>
+        </div>
+        </div>
 
 
         <!-- sonteckge = 선택지구역을 말함 -->
         <div class=sonteckge>
             <div class="choosesonteckge">
                 <p> 보고싶으신 항목을 선택해 주십시오</p>
+
+                <div class="ball" onclick="cl_ball()"></div>
             </div>
             <div class="container">
                 <!--  -->
@@ -162,6 +175,33 @@
         </div>
 
     </main>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var ball = document.querySelector('.start-box'),
+                info = document.querySelector('.info'),
+                y = ball.style.top,
+                gravity = 1;
+            a = 0;
+
+
+            document.getElementById("mimi_btn1").addEventListener("click", javascript_onclikc);
+            function javascript_onclikc() {
+                setInterval(function () {
+
+                    if (y > 420) { gravity = -gravity; }
+
+                    gravity += 1;
+                    y = y + gravity;
+                    ball.style.top = (y) * 0.01 + "vh";
+                }, 50);
+
+            }
+        }
+
+    </script>
+
 </body>
 
 
@@ -189,38 +229,10 @@
 <script src="main.js"></script>
 
 <!-- 물리엔진 js  -->
-<script src="matter.js"></script>
 
 
 <!--  -->
 
-<script>
-
-
-    let engine = Matter.Engine.create();
-
-    let render = Matter.Render.create({
-        element: document.body,
-        engine: engine
-    });
-
-    function start_box_fall() {
-        
-        //parms: x,y,width,height,options
-        let ground = Matter.Bodies.rectangle(400, 600, 810, 60, { isStatic: true });
-        let boxA = Matter.Bodies.rectangle(400, 200, 80, 80);
-        let boxB = Matter.Bodies.rectangle(450, 50, 80, 80);
-
-        var wow = document.createElement('div');
-        wow.textContent = "스킵샘플";
-        document.body.append(boxA);
-
-    }
-
-    Matter.World.add(engine.world, [boxA, boxB, ground, mouseCoonstraint]);
-    Matter.Engine.run(engine);
-    Matter.Render.run(render);
-</script>
 
 
 
