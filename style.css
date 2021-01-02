@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 body {
 
@@ -11,12 +12,12 @@ body {
 }
 #smooth_scroll_heck{
     position: absolute;
-    background: red;
+    background: yellow;
     width: 100%;
     height: 100px;
-    top: 20vh;
-    
+    top: 110vh;
 }
+
 
 /* 스크롤막기 */
 .hidden
@@ -24,7 +25,7 @@ body {
      height:100%; 
      min-height:100%; 
      overflow:hidden !important;
-    touch-action:none;
+        touch-action:none;
 }
 
 /* 선택지 */
@@ -360,6 +361,12 @@ nav {
 
 }
 
+.bluecontroller {
+    display: absolute;
+    background: red;
+    width: 100%;
+    
+}
 
 .middle_scroll {
     /* background: rgb(88, 88, 88); */

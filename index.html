@@ -78,7 +78,7 @@
                     </div>
                     <div class="start-box">
 
-                        <button id="mimi_btn1" type="button" > <a href="#smooth_scroll_heck">SKIP</a></button>
+                        <button id="mimi_btn1" type="button" > <a href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },750);">SKIP</a></button>
 
                     </div>
             </div>
@@ -88,9 +88,13 @@
             <!-- <div id = "app"></div> -->
             <div id = "app"class = "blue_sea">
                 <!-- <div id = 'app' class = "blue_sea"> -->
+                <div class = "bluecontroller">
+                <img src="./image/DII.jpg" style=" width: 60%; height: 60%; left: 50%;"></img> 
+                <img src="./image/mudae.png" style="width: 100%;"></img> 
+                </div>
             <div class = "middle_message"></div>
             <img src = "./image/DII.jpg"  alt="" height="50%" width="60%" style="display:block; margin: auto; " />
-
+                
              </div>
         </div>
 
@@ -182,14 +186,18 @@
 
         window.onload = function () {
             var box = document.querySelector('.start-box'),
+            
                 info = document.querySelector('.info'),
                 // a = box.style.top;
                 y = 600;
-                gravity = 30;
+                gravity = 40;
                 up = true;
                 gasokdo = 0;
                 r = 0;
+                o = 100;
+                gasok = true;
 ///////////////////
+
 
 
             document.getElementById("mimi_btn1").addEventListener("click", javascript_onclikc);
@@ -199,13 +207,25 @@
                     
                     // if (y > 420) { gravity = -gravity; }
                    if (up === true) {
-                        y = y - (gravity + gasokdo);
+                   
+                         y = y - (gravity + gasokdo);
                         r = r - 1;
                         box.style.top = (y) + "px";
                         box.style.transform = "rotate"+ "("+(r) + "deg"+")";
-                         gasokdo -= 5;
-                         
+                        gasokdo -= 5;
+
+                        if (gasokdo < -100 ){
+                        o = o - 7;    
+                      
+                        box.style.opacity =  (o)  +"%";  
+                        if (o < 0) {
+                            up = false;
+                          //  element.parentNode.removeChild(box);
+                        }
                     }
+                    
+                    }
+
 
                     //if (gravity < -10) { up = false;}
                     /*
