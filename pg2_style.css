@@ -1,0 +1,170 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #383838;
+    /* font-family: 'Popp' */
+}
+
+.pg2_intro {
+    display: flex;
+    background: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.logotext {
+    position: absolute;
+    
+    color:white;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    left: 35%;
+    bottom: 10%;
+    font-size: 300px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    opacity: 95%;
+    transition: 2.5s;
+}
+
+
+.logotext:hover {/*
+    position: absolute;
+    color:white;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    left: 39%;
+    bottom: 65%;
+    font-size: 300px;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    opacity: 95%;*/
+}
+
+
+.logoname {
+    position: absolute;
+    
+    color:white;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    left: 20%;
+    bottom: 30%;
+    font-size: 200px;
+    font-weight: 300px;
+    opacity: 95%;
+}
+
+.port{
+
+    position: absolute;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 210px;
+    left: 55%;
+    bottom: 30%;
+    font-size: 105px;
+}
+
+.folio{
+  
+    position: absolute;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 410px;
+    left: 52.5%;
+    bottom: 16%;
+    font-size: 105px;
+}
+
+.port_button {
+
+    position: absolute;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 110px;
+    left: 32.5%;
+    bottom: 66%;
+    font-size: 30px;
+
+}
+
+.card {
+
+    position: relative;
+    background: #fff;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+
+
+.card .content {
+    width: 400px ;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.card .sliderText {
+
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.card .content a 
+{
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #262626;
+    color: #262626;
+    font-weight: 600; 
+}
+
+.card .sliderText h3 
+{
+    color: #fff;
+    font-size: 3em;
+
+}
+
+
+.swiper-slide 
+{
+    width: 400px;
+}
+.swiper-slide:nth-child(1) .sliderText
+{
+    background: #2196f3;
+}
+.swiper-slide:nth-child(2) .sliderText
+{
+    background: #2196f3;
+}
+.swiper-slide:nth-child(3) .sliderText
+{
+    background: #2196f3;
+}
+/*
+.swiper-slide:nth-child(1) .sliderText
+{
+    background: #2196f3;
+}

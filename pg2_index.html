@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>루뎅 포트폴리오</title>
+    <link rel="stylesheet" href="./pg2_style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+
+    <main data-barba="container" data-barba-namespace="about-section">
+        <div class="about-fullbody">
+            <div class="about-header">
+
+            <div class="title animate-this">
+                <div class = "pg2_intro">
+
+                    <nav class = "logotext"> 맹</nav>
+                    <!-- <div class = "port_button">바로보기</div> -->
+                    <nav class = "port">포트</nav>
+                    <nav class = "folio">폴리오</nav>
+                   <!-- <nav class = "logoname">현서</nav>-->
+                   <!-- <img src="./image/DII_small.jpg" style=" position: absolute; height: 100vh; left: 110vh;">-->
+                    
+                </div>
+                <div class = "middleintro">
+
+
+                </div>
+                </div>
+                <div class="animate-this button">
+
+
+                   <div class = "swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class = "swiper-slide">
+                            <div class="card">
+                                <div class="sliderText">
+                                    <h3> 슬라이드 해주세요 </h3>
+                                </div>
+                                <div class="content">
+                                    <p>adasad</p>
+                                    <a href="#"> read more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "swiper-slide">
+                            <div class="card">
+                                <div class="sliderText">
+                                    <h3> Slide two</h3>
+                                </div>
+                                <div class="content">
+                                    <p>adasad</p>
+                                    <a href="#"> read more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "swiper-slide">
+                            <div class="card">
+                                <div class="sliderText">
+                                    <h3> Slide three</h3>
+                                </div>
+                                <div class="content">
+                                    <p>adasad</p>
+                                    <a href="#"> read more</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>      
+
+                    <a href="index.html">back </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--<script src="./swiper.js"></script>-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<script src="main.js"></script>
+
+</html>
