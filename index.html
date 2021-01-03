@@ -89,11 +89,23 @@
             <div id = "app"class = "blue_sea">
                 <!-- <div id = 'app' class = "blue_sea"> -->
                 <div class = "bluecontroller">
-                <img src="./image/DII.jpg" style=" width: 60%; height: 60%; left: 50%;"></img> 
-                <img src="./image/mudae.png" style="width: 100%;"></img> 
+                
+                <img  class="bluecon" src="./image/DII.jpg" style="">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            
+                </img> 
+               
+
+                <img class="mudae" src="./image/mudae2.png" style = " "></img> 
+                
+                <img class="ps" src="./image/ps.jpg" style = ""></img> 
                 </div>
+ 
             <div class = "middle_message"></div>
-            <img src = "./image/DII.jpg"  alt="" height="50%" width="60%" style="display:block; margin: auto; " />
+            <!-- <img src = "./image/DII.jpg"  alt="" height="50%" width="60%" style="display:block; margin: auto; " /> -->
                 
              </div>
         </div>
@@ -215,7 +227,7 @@
                         gasokdo -= 5;
 
                         if (gasokdo < -100 ){
-                        o = o - 7;    
+                        o = o - 5;    
                       
                         box.style.opacity =  (o)  +"%";  
                         if (o < 0) {
@@ -237,8 +249,17 @@
                 }, 50);
 
             }
-        }
-
+        }/*
+        var bluecon = document.querySelector('.bluecontroller'),
+            
+        var b = bluecon.style.opacity ;
+        var bb = false;
+        if b = 100 {
+            bb = true;
+        } 
+        if bb = true{
+            bluecon.style.opacity = 100 + "%";
+        }*/
     </script>
 
 </body>

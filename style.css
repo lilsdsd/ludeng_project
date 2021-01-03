@@ -12,7 +12,7 @@ body {
 }
 #smooth_scroll_heck{
     position: absolute;
-    background: yellow;
+    /* background: yellow; */
     width: 100%;
     height: 100px;
     top: 110vh;
@@ -340,9 +340,9 @@ nav {
   /* margin: 5px; */
   left: 47%;
   /* top:60vh; */
-  top:600px;
+  top:700px;
   transition: 0.1s;
-  
+  z-index: 1;
   transform: translateX(-50%);
 }
  
@@ -362,11 +362,100 @@ nav {
 }
 
 .bluecontroller {
-    display: absolute;
-    background: red;
+    display: flex;
+    /* background: red; */
     width: 100%;
-    
+    height: 130vh;
+    /* -webkit-filter: grayscale(100%); */
+    /* filter: black; */
+    /* -webkit-filter:contrast(0%); */
+
+
 }
+.bluecon {
+    opacity: 0%;
+    transition: 3s;
+    position: absolute;
+    left: 50vh;
+    width: 50%; 
+    height: 130%; 
+}
+
+.bluecontroller img  .bluecon:hover{
+    opacity: 100%;
+    transition: 3s;
+    position: absolute; 
+    width: 50%; 
+    height: 100%; 
+    left: 25%;
+}
+
+.mudae {
+     position: absolute;
+         opacity: 0;
+                height: 70%; 
+                 width: 30%; 
+                 top: 130vh; 
+                 left: 5vh;
+                 transition: 2s;
+}
+.bluecontroller img .mudae:hover {
+
+             opacity: 100%;
+               height: 70%; 
+                width: 30%; 
+                top: 130vh; 
+                left: 5vh;
+}
+ 
+    
+.ps {
+    position: absolute;
+    opacity: 0%;
+    height: 60%; 
+    width: 40%; 
+    top: 130vh; 
+    right: 5vh;
+    transition: 2s;
+}
+
+.ps:hover {
+    position: absolute;
+    opacity: 100%;
+    height: 60%; 
+    width: 40%; 
+    top: 130vh; 
+    right: 5vh;
+}
+/*
+.bluecontroller img span {
+    position: absolute;
+    display: block;
+    background: #2894ff;
+}
+
+.bluecontroller img span:nth-child(1) {
+
+    left:0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.25s;
+}
+
+.bluecontroller img:hover span:nth-child(1) {
+
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.25s;
+}
+*/
+.bluecontroller img:hover {
+    opacity: 100%;
+}
+
 
 .middle_scroll {
     /* background: rgb(88, 88, 88); */
