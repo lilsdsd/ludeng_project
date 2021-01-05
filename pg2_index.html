@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>루뎅 포트폴리오</title>
-    <link rel="stylesheet" href="./pg2_style.css" />
+    <link  href="css/pg2_style.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
@@ -13,40 +13,92 @@
     <div class="load-container">
         <div class="loading-screen"></div>
     </div>
+    <div id = "smooth_scroll_heck"></div>
 
     <main data-barba="container" data-barba-namespace="about-section">
+      
         <div class="about-fullbody">
             <div class="about-header">
 
             <div class="title animate-this">
-                <div class = "pg2_intro">
 
-                    <nav class = "logotext"> 맹</nav>
-                    <!-- <div class = "port_button">바로보기</div> -->
-                    <nav class = "port">포트</nav>
-                    <nav class = "folio">폴리오</nav>
-                   <!-- <nav class = "logoname">현서</nav>-->
-                   <!-- <img src="./image/DII_small.jpg" style=" position: absolute; height: 100vh; left: 110vh;">-->
+                <div class = "pg2_intro">
                     
+                    <div class="ability_sec" disabled="true" > 
+                            <!-- <div class = "abili">가능 능력</div> -->
+                            <img class= "Cimg"src="./image/c-programming-569564.webp" style = "" />
+                            <!-- <div class = "Clanguege">C언어</div> -->
+                            <img class= "GM1img" src="./image/gm1.png" style = "" />
+                            <img class= "GM2img" src="./image/gms2_logo_512.png" style = "" />
+                            <div class = "email"> <h1>manglilsdsd@gmail.com</h1> </div>
+                            <img class= "HTMLimg" src="./image/1200px-HTML5_logo_and_wordmark.svg.png" style = "" />
+                            <img class= "CSSimg" src="./image/css3-logo.png" style = "" />
+                            <img class= "JSimg" src="./image/js.png" style = "" />
+              
+                    </div>
+                    
+                    <div class="game_sec1" disabled="true" >
+                        <img class = "CROSSimg" src="./image/crossimg.png"/>
+                        
+                     
+                     
+                    </div>
+
+                    <div class="game_sec2" disabled="true" >
+                        <!-- <img class = "BAimg" src="./image/blue_apple.png"/> -->
+                        <video class = "BAimg" src="./image/BLUEAPPLE.mp4"></video>
+                    </div>
+
+                    <div class="game_sec3" disabled="true" >
+                        <video class = "advan" src = "./image/advan.mp4" ></video>
+                    </div>
+
+                    <div class="game_sec4" disabled="true" >
+                        <video class = "stop" src = "./image/STOP.mp4" ></video>
+                    </div>
+
+                    <div class="video_sec1" disabled="true" >
+                      <video src="./image/무제.mp4"></video>
+
+                    </div>
+                    <div class="video_sec2" disabled="true" >
+                        <video src="image/세자세.mp4"></video>
+                    </div>
+                    <div class="video_sec3" disabled="true" >
+                                             
+                      <video src="./image/일기 최종본.mov"></video>
+                    </div>
+
+                    <div class="untill_sec" disabled="true" >
+                        <img class="un1" src="./image/until1.png"/>
+                        <img class="un2"src="./image/until2.png"/>
+                      </div>
+  
+
+
+                        <nav class = "logotext"> 맹</nav>
+                        
+                        <nav class = "port">포트</nav>
+                        <nav class = "folio">폴리오</nav>
                 </div>
+                        
                 <div class = "middleintro">
 
 
                 </div>
                 </div>
                 <div class="animate-this button">
-
-
                    <div class = "swiper-container">
                     <div class="swiper-wrapper">
                         <div class = "swiper-slide">
+                            
                             <div class="card">
                                 <div class="sliderText">
-                                    <h3> 슬라이드 해주세요 </h3>
+                                    <h3> 프로필 </h3>
                                 </div>
                                 <div class="content">
-                                    <p>adasad</p>
-                                    <a href="#"> read more</a>
+                                    <p>다룰수있는 프로그램과 능력, 이메일등이 적혀있습니다.</p>
+                                     <a id = "ability" href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },150);"  > 자세히보기</a>
                                 </div>
                             </div>
                         </div>
@@ -54,11 +106,11 @@
                         <div class = "swiper-slide">
                             <div class="card">
                                 <div class="sliderText">
-                                    <h3> Slide two</h3>
+                                    <h3> 게임-크로스 </h3>
                                 </div>
                                 <div class="content">
-                                    <p>adasad</p>
-                                    <a href="#"> read more</a>
+                                    <p>만들었던 첫 게임 작품 CROSS. 갤러그레서 영향을 받아 새로운방식으로 게임을 만들어보고싶어, 하-우방향을 동시에 조작하는 슈팅게임을 제작함. </p>
+                                    <a id = "videogame1" href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },150);"> 자세히보기</a>
                                 </div>
                             </div>
                         </div>
@@ -66,30 +118,344 @@
                         <div class = "swiper-slide">
                             <div class="card">
                                 <div class="sliderText">
-                                    <h3> Slide three</h3>
+                                    <h3> 게임-블루애플 </h3>
                                 </div>
                                 <div class="content">
-                                    <p>adasad</p>
-                                    <a href="#"> read more</a>
+                                    <p> 코너스톤 국제학교 아트페어 전시회를 위해 Nitro fun의 노래에 맞춰 진행되는 슈팅게임을 제작, HP와 탄창, 크기의 개념을 통합한 매커니즘을 구상해 적용했다.</p>
+                                    <a id = "videogame2" href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },150);"> 자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "swiper-slide">
+                            <div class="card">
+                                <div class="sliderText">
+                                    <h3 style="color: white; font-size: 2em;"> 게임-엘리슨의모험 </h3>
+                                </div>
+                                <div class="content">
+                                    <p>당시 용돈벌이를 위해 게임 제작 커미션을 기획하였고, 해당 커미션의 샘플이 된 작품. 플랫포머 슈팅게임이다. </p>
+                                    <a id = "videogame3" href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },150);"> 자세히보기</a>
                                 </div>
                             </div>
                         </div>
 
+                        <div class = "swiper-slide">
+                            <div class="card">
+                                <div class="sliderText">
+                                    <h3> 게임-스탑 </h3>
+                                </div>
+                                <div class="content">
+                                    <p> 불릿타임 액션게임 슈퍼핫에서 영감을 받아 제작한게임. 버튼을 눌러 시간을 느리게하고 장애물을 피할수있는 게임이다. 플레이시간이 지날수록 얻는 점수가 줄어든다.</p>
+                                    <a id = "videogame4" href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },150);"> 자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class = "swiper-slide">
+                            <div class="card">
+                                <div class="sliderText">
+                                    <h3> 무제</h3>
+                                </div>
+                                <div class="content">
+                                    <p> 코너스톤 국제학교 교내 영화제 출품작, 자판기와 이어폰에서 영감을 받아 당시 받았던 교육에 대한 의문을 영화로 표현했다. </p>
+                                    <a id = "video1" href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },150);"> 자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class = "swiper-slide">
+                            <div class="card">
+                                <div class="sliderText">
+                                    <h3> 세자세</h3>
+                                </div>
+                                <div class="content">
+                                    <p>거꾸로캠퍼스 1모듈 교육과정 개인주제프로젝트 작품</p>
+                                    <a id = "video2" href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },150);"> 자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class = "swiper-slide">
+                            <div class="card">
+                                <div class="sliderText">
+                                    <h3> 일기</h3>
+                                </div>
+                                <div class="content">
+                                    <p>거꾸로캠퍼스 2모듈 작품. 조감독, 연출을 맡았다</p>
+                                    <a id = "video3" href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },150);"> 자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class = "swiper-slide">
+                            <div class="card">
+                                <div class="sliderText">
+                                    <h3> 기타</h3>
+                                </div>
+                                <div class="content">
+                                    <p></p>
+                                    <a id = "gita" href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },150);"> 자세히보기</a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class = "swiper-slide">
+                            <div class="card">
+                                <div class="sliderText">
+                                    <h3> 어닛브</h3>
+                                </div>
+                                <div class="content">
+                                    <p>C랩</p>
+                                    <a id = "untill" href="javascript:setTimeout(()=>{window.location = '#smooth_scroll_heck' },150);"> 자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>      
 
-                    <a href="index.html">back </a>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                    <!-- <a href="index.html">back </a> -->
                 </div>
             </div>
         </div>
+
     </main>
 
-
-    <!--<script src="./swiper.js"></script>-->
+    <script src="./swiper.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+       /*
+       var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                },
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+              });*/
+              var swiper = new Swiper('.swiper-container',{
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',},
+              });
+            //   var ability = document.getElementByClass("ability_sec");
+
+window.onload = function() {
    
+             var abily = document.querySelector('.ability_sec');
+
+             var gamey1 = document.querySelector('.CROSSimg');
+             var gamey2 = document.querySelector('.BAimg');
+             var gamey3 = document.querySelector('.advan');
+             var gamey4 = document.querySelector('.stop');
+   
+              document.getElementById("ability").onclick = function () {
+              
+               /* if (ab_op <= 100) {
+                    ab_op += 100;
+                } */
+                  
+                abily.style.opacity = 100 + '%';
+                gamey1.style.opacity = 0 + '%';
+                gamey2.style.opacity = 0 + '%';
+                gamey3.style.opacity = 0 + '%';
+                gamey4.style.opacity = 0 + '%';
+                videy1.style.opacity = 0 + '%';
+                videy2.style.opacity = 0 + '%';
+                videy3.style.opacity = 0 + '%';
+                untiy.style.opacity = 0 + '%';
+              }
+
+              
+ 
+              document.getElementById("videogame1").onclick = function () {
+              
+               /* if (ab_op <= 100) {
+                    ab_op += 100;
+                } */
+                  
+                abily.style.opacity = 0 + '%';
+                gamey1.style.opacity = 100 + '%';
+                gamey2.style.opacity = 0 + '%';
+                gamey3.style.opacity = 0 + '%';
+                gamey4.style.opacity = 0 + '%';
+                videy1.style.opacity = 0 + '%';
+                videy2.style.opacity = 0 + '%';
+                videy3.style.opacity = 0 + '%';
+                untiy.style.opacity = 0 + '%';
+              }
+    
+                     
+              document.getElementById("videogame2").onclick = function () {
+              
+              /* if (ab_op <= 100) {
+                   ab_op += 100;
+               } */
+                 
+               abily.style.opacity = 0 + '%';
+               gamey1.style.opacity = 0 + '%';
+                gamey2.style.opacity = 100 + '%';
+                gamey3.style.opacity = 0 + '%';
+                gamey4.style.opacity = 0 + '%';
+                videy1.style.opacity = 0 + '%';
+                videy2.style.opacity = 0 + '%';
+                videy3.style.opacity = 0 + '%';
+               untiy.style.opacity = 0 + '%';
+             }
+                    
+             document.getElementById("videogame3").onclick = function () {
+              
+              /* if (ab_op <= 100) {
+                   ab_op += 100;
+               } */
+                 
+               abily.style.opacity = 0 + '%';
+               gamey1.style.opacity = 0 + '%';
+                gamey2.style.opacity = 0 + '%';
+                gamey3.style.opacity = 100 + '%';
+                gamey4.style.opacity = 0 + '%';
+                videy1.style.opacity = 0 + '%';
+                videy2.style.opacity = 0 + '%';
+                videy3.style.opacity = 0 + '%';
+               untiy.style.opacity = 0 + '%';
+             }
+                    
+             document.getElementById("videogame4").onclick = function () {
+              
+              /* if (ab_op <= 100) {
+                   ab_op += 100;
+               } */
+                 
+               abily.style.opacity = 0 + '%';
+               gamey1.style.opacity = 0 + '%';
+                gamey2.style.opacity = 0 + '%';
+                gamey3.style.opacity = 0 + '%';
+                gamey4.style.opacity = 100 + '%';
+                videy1.style.opacity = 0 + '%';
+                videy2.style.opacity = 0 + '%';
+                videy3.style.opacity = 0 + '%';
+               untiy.style.opacity = 0 + '%';
+             }
+
+              var videy1 = document.querySelector('.video_sec1');
+              var videy2 = document.querySelector('.video_sec2');
+              var videy3 = document.querySelector('.video_sec3');
+     
+
+              document.getElementById("video1").onclick = function () {
+              
+               /* if (ab_op <= 100) {
+                    ab_op += 100;
+                } */
+                  
+                abily.style.opacity = 0 + '%';
+                gamey1.style.opacity = 0 + '%';
+                gamey2.style.opacity = 0 + '%';
+                gamey3.style.opacity = 0 + '%';
+                gamey4.style.opacity = 0 + '%';
+                videy1.style.opacity = 100 + '%';
+                videy2.style.opacity = 0 + '%';
+                videy3.style.opacity = 0 + '%';
+                untiy.style.opacity = 0 + '%';
+              }
+              
+              document.getElementById("video2").onclick = function () {
+              
+              /* if (ab_op <= 100) {
+                   ab_op += 100;
+               } */
+                 
+               abily.style.opacity = 0 + '%';
+               gamey1.style.opacity = 0 + '%';
+               gamey2.style.opacity = 0 + '%';
+               gamey3.style.opacity = 0 + '%';
+               gamey4.style.opacity = 0 + '%';
+               videy1.style.opacity = 0 + '%';
+                videy2.style.opacity = 100 + '%';
+                videy3.style.opacity = 0 + '%';
+               untiy.style.opacity = 0 + '%';
+             }
+             
+             document.getElementById("video3").onclick = function () {
+              
+              /* if (ab_op <= 100) {
+                   ab_op += 100;
+               } */
+                 
+               abily.style.opacity = 0 + '%';
+               gamey1.style.opacity = 0 + '%';
+               gamey2.style.opacity = 0 + '%';
+               gamey3.style.opacity = 0 + '%';
+               gamey4.style.opacity = 0 + '%';
+               videy1.style.opacity = 0 + '%';
+                videy2.style.opacity = 0 + '%';
+                videy3.style.opacity = 100 + '%';
+               untiy.style.opacity = 0 + '%';
+             }
+
+              /*
+              var gitay = document.querySelector('.gita_sec');
+
+          
+              document.getElementById("gita").onclick = function () {
+              
+               /* if (ab_op <= 100) {
+                    ab_op += 100;
+                } 
+                  
+                abily.style.opacity = 0 + '%';
+                gamey1.style.opacity = 0 + '%';
+               gamey2.style.opacity = 0 + '%';
+               gamey3.style.opacity = 0 + '%';
+               gamey4.style.opacity = 0 + '%';
+                videy1.style.opacity = 0 + '%';
+                videy2.style.opacity = 0 + '%';
+                videy3.style.opacity = 0 + '%';
+                untiy.style.opacity = 0 + '%';
+                gitay.style.opacity = 100 + '%';
+              }*/
+
+            
+              var untiy = document.querySelector('.untill_sec');
+           
+          
+              document.getElementById("untill").onclick = function () {
+              
+               /* if (ab_op <= 100) {
+                    ab_op += 100;
+                } */
+                  
+                abily.style.opacity = 0 + '%';
+                gamey1.style.opacity = 0 + '%';
+               gamey2.style.opacity = 0 + '%';
+               gamey3.style.opacity = 0 + '%';
+               gamey4.style.opacity = 0 + '%';
+                videy1.style.opacity = 0 + '%';
+                videy2.style.opacity = 0 + '%';
+                videy3.style.opacity = 0 + '%';
+                untiy.style.opacity = 100 + '%';
+                gitay.style.opacity = 0 + '%';
+
+              }
+
+            }
+   </script>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/@barba/core"></script>

@@ -220,7 +220,7 @@ body {
 }
 .container .card .face.face2 .content a
 {
-    margin: 15px 85px ;
+    margin: auto 85px ;
     display: inline-block;
     text-decoration: none;
     font-weight: 900;
@@ -460,7 +460,7 @@ nav {
 .middle_scroll {
     /* background: rgb(88, 88, 88); */
     background: #000;
-   height:400vh;
+   height:100vh;
 }
 
 .middle_message{

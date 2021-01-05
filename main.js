@@ -9,6 +9,7 @@ new Vue({
 
 */
 
+
 function delay(n) {
     n = n || 2000;
     return new Promise((done) => {
@@ -116,21 +117,16 @@ var box = document.querySelector('.start-box'),
                     }, 50);
     
                 }
+               // document.getElementsByClassName("pg2_button").addEventListener("click", css_change);
+               function changeCSS(cssFile, cssLinkIndex) {
 
+                var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+            
+                var newlink = document.createElement("link");
+                newlink.setAttribute("rel", "stylesheet");
+                newlink.setAttribute("type", "text/css");
+                newlink.setAttribute("href", cssFile);
+            
+                document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+            }
 
-                var swiper = new Swiper('.swiper-container', {
-                    effect: 'coverflow',
-                    grabCursor: true,
-                    centeredSlides: true,
-                    slidesPerView: 'auto',
-                    coverflowEffect: {
-                      rotate: 30,
-                      stretch: 0,
-                      depth: 200,
-                      modifier: 1,
-                      slideShadows: true,
-                    },
-                    pagination: {
-                      el: '.swiper-pagination',
-                    },
-                  });
